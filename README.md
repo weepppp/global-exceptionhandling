@@ -1,1 +1,2 @@
-# *全局异常处理的参考处理方式之一*
+### *全局异常处理的参考处理方式之一*
+（另一种参考写法[全局异常捕获处理](https://blog.csdn.net/weixin_42183336/article/details/122723125?spm=1001.2101.3001.6650.8&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-8-122723125-blog-123972640.pc_relevant_default&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-8-122723125-blog-123972640.pc_relevant_default&utm_relevant_index=17)）
