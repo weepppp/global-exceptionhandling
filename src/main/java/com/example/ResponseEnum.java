@@ -15,6 +15,11 @@ public enum ResponseEnum {
      * 数据异常
      */
     DATA_ERROR("A00007", "数据异常，请刷新后重新操作");
+    
+    
+    /**
+     * 更多状态码类型... ... ...
+     */
 
     private final String code;
     private final String msg;
