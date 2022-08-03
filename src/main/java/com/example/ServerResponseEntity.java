@@ -4,7 +4,8 @@ import java.io.Serializable;
 
 /**
  * @author weepppp 2022/8/1 21:29
- * 统一的返回接口
+ * 统一的返回接口类
+ * 此处结合ResponseEnum去进行code和msg的处理，也可以直接使用自定义code常量
  **/
 public class ServerResponseEntity<T> implements Serializable {
     /**
@@ -61,6 +62,18 @@ public class ServerResponseEntity<T> implements Serializable {
         serverResponseEntity.setCode(ResponseEnum.OK.value());
         return serverResponseEntity;
     }
+    
+     /**
+     * 上面的方法返回值可以增加一个msg属性，视需求而定
+        public static <T> ServerResponseEntity<T> success(T data) {
+            ServerResponseEntity<T> serverResponseEntity = new ServerResponseEntity<>();
+            serverResponseEntity.setData(data);
+            serverResponseEntity.setCode(ResponseEnum.OK.value());
+            serverResponseEntity.setMsg(ResponseEnum.OK.getMsg());
+            return serverResponseEntity;
+    }
+     */
+        
 
     public static <T> ServerResponseEntity<T> success() {
         ServerResponseEntity<T> serverResponseEntity = new ServerResponseEntity<>();
